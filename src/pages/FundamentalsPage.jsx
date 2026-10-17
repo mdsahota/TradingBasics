@@ -37,7 +37,8 @@ const lessons = [
     title: 'Orders and Trading Basics',
     description:
       'Get familiar with market orders, limit orders, stop orders, bid prices, ask prices, and spreads.',
-  },
+    href: '/learn/fundamentals/orders-trading-basics/',
+    },
   {
     number: '05',
     title: 'Risk Before Reward',
