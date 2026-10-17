@@ -13,6 +13,7 @@ import LearnPage from './pages/LearnPage'
 import FundamentalsPage from './pages/FundamentalsPage'
 import WhatIsTradingPage from './pages/WhatIsTradingPage'
 import UnderstandingMarketsPage from './pages/UnderstandingMarketsPage'
+import HowPricesMovePage from './pages/HowPricesMovePage'
 
 function HomePage() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path="/learn/fundamentals/" element={<FundamentalsPage />} />
         <Route path="/learn/fundamentals/what-is-trading/" element={<WhatIsTradingPage />} />
         <Route path="/learn/fundamentals/markets/" element={<UnderstandingMarketsPage />} />
+        <Route path="/learn/fundamentals/how-prices-move/" element={<HowPricesMovePage />} />
         <Route
           path="/risk-management/*"
           element={<PlaceholderPage title="Risk Management" />}

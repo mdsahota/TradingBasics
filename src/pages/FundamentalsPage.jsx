@@ -30,7 +30,8 @@ const lessons = [
     title: 'How Prices Move',
     description:
       'Learn how buying and selling activity, supply and demand, and market expectations can influence prices.',
-  },
+    href: '/learn/fundamentals/how-prices-move/',
+    },
   {
     number: '04',
     title: 'Orders and Trading Basics',
