@@ -3,12 +3,14 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import MainLayout from './components/layout/MainLayout'
 import HeroSection from './components/layout/HeroSection'
 import LearningCategories from './components/layout/LearningCategories'
+import RiskManagementSection from './components/layout/RiskManagementSection'
 
 function HomePage() {
   return (
     <>
       <HeroSection />
       <LearningCategories />
+      <RiskManagementSection />
     </>
   )
 }

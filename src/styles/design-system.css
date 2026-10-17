@@ -908,3 +908,89 @@ a.content-card:hover .content-card__link {
     gap: 12px;
   }
 }
+
+/* Risk management section */
+.risk-management-section {
+  padding: 88px 0;
+  background: var(--color-background);
+}
+
+.risk-management-section__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+  align-items: end;
+  gap: 40px;
+}
+
+.risk-management-section__intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 22px;
+  border: 1px solid rgba(0, 184, 169, 0.24);
+  border-radius: var(--card-radius);
+  background: rgba(0, 184, 169, 0.06);
+}
+
+.risk-management-section__intro-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 10px;
+  background: rgba(0, 184, 169, 0.14);
+  color: #008F83;
+}
+
+.risk-management-section__intro p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.risk-management-section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 44px;
+}
+
+.risk-topic-card {
+  min-width: 0;
+}
+
+.risk-topic-card .content-card__title {
+  font-size: 21px;
+}
+
+.risk-management-section__action {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+@media (max-width: 900px) {
+  .risk-management-section__header {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .risk-management-section__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .risk-management-section {
+    padding: 60px 0;
+  }
+
+  .risk-management-section__grid {
+    grid-template-columns: 1fr;
+    margin-top: 32px;
+  }
+
+  .risk-management-section__action .button {
+    width: 100%;
+  }
+}
