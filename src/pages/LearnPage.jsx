@@ -35,7 +35,7 @@ const learningPaths = [
     title: 'Trading Psychology',
     description:
       'Explore emotional discipline, patience, decision-making, and ways to review your trading behaviour.',
-    href: '/trading-psychology/',
+    href: '/learn/fundamentals/trading-psychology/',
     icon: <Brain size={24} />,
   },
   {

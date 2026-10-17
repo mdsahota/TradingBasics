@@ -17,6 +17,7 @@ import HowPricesMovePage from './pages/HowPricesMovePage'
 import OrdersTradingBasicsPage from './pages/OrdersTradingBasicsPage'
 import RiskBeforeRewardPage from './pages/RiskBeforeRewardPage'
 import TradingPsychologyPage from './pages/TradingPsychologyPage'
+import RiskManagementPage from './pages/RiskManagementPage'
 
 function HomePage() {
   return (
@@ -63,10 +64,7 @@ function App() {
         <Route path="/learn/fundamentals/orders-trading-basics/" element={<OrdersTradingBasicsPage />} />
         <Route path="/learn/fundamentals/risk-before-reward/" element={<RiskBeforeRewardPage />} />
         <Route path="/learn/fundamentals/trading-psychology/" element={<TradingPsychologyPage />} />
-        <Route
-          path="/risk-management/*"
-          element={<PlaceholderPage title="Risk Management" />}
-        />
+        <Route path="/risk-management/*"   element={<RiskManagementPage />} />
         <Route
           path="/trading-psychology/*"
           element={<PlaceholderPage title="Trading Psychology" />}
