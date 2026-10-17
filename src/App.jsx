@@ -12,6 +12,7 @@ import FinalCTASection from './components/layout/FinalCTASection'
 import LearnPage from './pages/LearnPage'
 import FundamentalsPage from './pages/FundamentalsPage'
 import WhatIsTradingPage from './pages/WhatIsTradingPage'
+import UnderstandingMarketsPage from './pages/UnderstandingMarketsPage'
 
 function HomePage() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Route path="/learn/*" element={<LearnPage />} />
         <Route path="/learn/fundamentals/" element={<FundamentalsPage />} />
         <Route path="/learn/fundamentals/what-is-trading/" element={<WhatIsTradingPage />} />
+        <Route path="/learn/fundamentals/markets/" element={<UnderstandingMarketsPage />} />
         <Route
           path="/risk-management/*"
           element={<PlaceholderPage title="Risk Management" />}

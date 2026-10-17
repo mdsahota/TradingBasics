@@ -23,7 +23,8 @@ const lessons = [
     title: 'Understanding Financial Markets',
     description:
       'Explore stocks, forex, commodities, indices, and other markets where traders participate.',
-  },
+    href: '/learn/fundamentals/markets/',
+    },
   {
     number: '03',
     title: 'How Prices Move',
