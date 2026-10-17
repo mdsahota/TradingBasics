@@ -18,6 +18,9 @@ import OrdersTradingBasicsPage from './pages/OrdersTradingBasicsPage'
 import RiskBeforeRewardPage from './pages/RiskBeforeRewardPage'
 import TradingPsychologyPage from './pages/TradingPsychologyPage'
 import RiskManagementPage from './pages/RiskManagementPage'
+import TechnicalAnalysisPage from './pages/TechnicalAnalysisPage'
+import TradingStrategiesPage from './pages/TradingStrategiesPage'
+import MarketAnalysisPage from './pages/MarketAnalysisPage'
 
 function HomePage() {
   return (
@@ -65,14 +68,9 @@ function App() {
         <Route path="/learn/fundamentals/risk-before-reward/" element={<RiskBeforeRewardPage />} />
         <Route path="/learn/fundamentals/trading-psychology/" element={<TradingPsychologyPage />} />
         <Route path="/risk-management/*"   element={<RiskManagementPage />} />
-        <Route
-          path="/trading-psychology/*"
-          element={<PlaceholderPage title="Trading Psychology" />}
-        />
-        <Route
-          path="/tools-strategies/*"
-          element={<PlaceholderPage title="Tools & Strategies" />}
-        />
+        <Route path="/tools-strategies/*" element={<TechnicalAnalysisPage />} />
+        <Route path="/trading-strategies/*" element={<TradingStrategiesPage />} />
+        <Route   path="/market-analysis/*"   element={<MarketAnalysisPage />} />
         <Route
           path="/blog/*"
           element={<PlaceholderPage title="TradingBasics Blog" />}

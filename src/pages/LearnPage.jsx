@@ -51,7 +51,7 @@ const learningPaths = [
     title: 'Trading Strategies',
     description:
       'Discover how different trading approaches work and why a strategy should include clear rules and risk controls.',
-    href: '/tools-strategies/',
+    href: '/trading-strategies/',
     icon: <TrendingUp size={24} />,
   },
 
