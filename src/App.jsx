@@ -4,6 +4,11 @@ import MainLayout from './components/layout/MainLayout'
 import HeroSection from './components/layout/HeroSection'
 import LearningCategories from './components/layout/LearningCategories'
 import RiskManagementSection from './components/layout/RiskManagementSection'
+import TradingPsychologySection from './components/layout/TradingPsychologySection'
+import ToolsStrategiesSection from './components/layout/ToolsStrategiesSection'
+import LatestArticlesSection from './components/layout/LatestArticlesSection'
+import WhyTradingBasicsSection from './components/layout/WhyTradingBasicsSection'
+import FinalCTASection from './components/layout/FinalCTASection'
 
 function HomePage() {
   return (
@@ -11,6 +16,11 @@ function HomePage() {
       <HeroSection />
       <LearningCategories />
       <RiskManagementSection />
+      <TradingPsychologySection />
+      <ToolsStrategiesSection />
+      <LatestArticlesSection />
+      <WhyTradingBasicsSection />
+      <FinalCTASection />
     </>
   )
 }
