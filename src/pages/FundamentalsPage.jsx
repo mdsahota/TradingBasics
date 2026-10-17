@@ -1,3 +1,4 @@
+import SEO from '../components/seo/SEO'
 import { Link } from 'react-router-dom'
 import {
   BookOpen,
@@ -5,6 +6,7 @@ import {
   ShieldCheck,
   ChartNoAxesCombined,
   ArrowRight,
+  Brain,
 } from 'lucide-react'
 
 import Container from '../components/common/Container'
@@ -44,18 +46,26 @@ const lessons = [
     title: 'Risk Before Reward',
     description:
       'Discover why protecting capital, planning potential losses, and managing position sizes matter.',
-  },
+    href: '/learn/fundamentals/risk-before-reward/',
+    },
   {
     number: '06',
-    title: 'Build Your Learning Plan',
+    title: 'Trading Psychology: Managing Emotions',
     description:
-      'Create a foundation for continued learning through practice, research, and reviewing your decisions.',
-  },
+      'Understand how fear, greed, impatience, and overconfidence can influence trading decisions and learn to build emotional discipline.',
+    href: '/learn/fundamentals/trading-psychology/',
+    },
 ]
 
 function FundamentalsPage() {
   return (
     <>
+    <SEO
+        title="Trading Fundamentals: Beginner Learning Guide"
+        description="Start learning trading fundamentals with beginner-friendly lessons on financial markets, price movements, trading orders, and risk management."
+        path="/learn/fundamentals/"
+    />
+
       <section className="fundamentals-hero">
         <Container>
           <span className="eyebrow">
@@ -120,7 +130,7 @@ function FundamentalsPage() {
                     )}
                     {lesson.number === '04' && <BookOpen size={23} />}
                     {lesson.number === '05' && <ShieldCheck size={23} />}
-                    {lesson.number === '06' && <BookOpen size={23} />}
+                    {lesson.number === '06' && <Brain size={23} />}
                     </div>
 
                     <h3>{lesson.title}</h3>

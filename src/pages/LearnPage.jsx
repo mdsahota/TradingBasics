@@ -1,4 +1,4 @@
-
+import SEO from '../components/seo/SEO'
 import {
   BookOpen,
   TrendingUp,
@@ -54,19 +54,27 @@ const learningPaths = [
     href: '/tools-strategies/',
     icon: <TrendingUp size={24} />,
   },
-  {
-    eyebrow: 'LEARN AT YOUR PACE',
-    title: 'Trading Essentials',
-    description:
-      'Build your knowledge step by step and revisit important concepts as your understanding develops.',
-    href: '/learn/fundamentals/',
-    icon: <BookOpen size={24} />,
-  },
+
+{
+  eyebrow: 'MAKE INFORMED DECISIONS',
+  title: 'Market Analysis',
+  description:
+    'Learn how traders evaluate market conditions, interpret information, and develop a structured approach to trading decisions.',
+  href: '/market-analysis/',
+  icon: <ChartNoAxesCombined size={24} />,
+},
+
 ]
 
 function LearnPage() {
   return (
     <>
+    <SEO
+        title="Learn Trading: Beginner Guides and Learning Paths"
+        description="Explore structured trading learning paths covering market fundamentals, risk management, trading psychology, technical analysis, and trading strategies."
+        path="/learn/"
+    />
+
       <section className="learn-page-hero">
         <Container>
           <span className="eyebrow">THE TRADINGBASICS LEARNING LIBRARY</span>

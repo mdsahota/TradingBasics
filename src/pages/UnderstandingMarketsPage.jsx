@@ -1,4 +1,4 @@
-
+import SEO from '../components/seo/SEO'
 import {
   ArrowLeft,
   ArrowRight,
@@ -65,6 +65,11 @@ function TrendingUpIcon() {
 function UnderstandingMarketsPage() {
   return (
     <>
+    <SEO
+    title="Understanding Financial Markets"
+    description="Explore stock markets, forex, commodities, market indices, ETFs, and bonds. Learn how financial markets work in this beginner-friendly trading guide."
+    path="/learn/fundamentals/markets/"
+    />    
       <section className="fundamentals-hero">
         <Container>
           <span className="eyebrow">

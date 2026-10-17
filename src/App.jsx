@@ -1,4 +1,4 @@
-
+import SEO from './components/seo/SEO'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import MainLayout from './components/layout/MainLayout'
 import HeroSection from './components/layout/HeroSection'
@@ -15,10 +15,17 @@ import WhatIsTradingPage from './pages/WhatIsTradingPage'
 import UnderstandingMarketsPage from './pages/UnderstandingMarketsPage'
 import HowPricesMovePage from './pages/HowPricesMovePage'
 import OrdersTradingBasicsPage from './pages/OrdersTradingBasicsPage'
+import RiskBeforeRewardPage from './pages/RiskBeforeRewardPage'
+import TradingPsychologyPage from './pages/TradingPsychologyPage'
 
 function HomePage() {
   return (
     <>
+      <SEO
+        title="Learn Trading, Strategies & Risk Management"
+        description="Build your trading knowledge with beginner-friendly lessons on financial markets, trading strategies, risk management, and trading psychology."
+        path="/"
+      />    
       <HeroSection />
       <LearningCategories />
       <RiskManagementSection />
@@ -54,6 +61,8 @@ function App() {
         <Route path="/learn/fundamentals/markets/" element={<UnderstandingMarketsPage />} />
         <Route path="/learn/fundamentals/how-prices-move/" element={<HowPricesMovePage />} />
         <Route path="/learn/fundamentals/orders-trading-basics/" element={<OrdersTradingBasicsPage />} />
+        <Route path="/learn/fundamentals/risk-before-reward/" element={<RiskBeforeRewardPage />} />
+        <Route path="/learn/fundamentals/trading-psychology/" element={<TradingPsychologyPage />} />
         <Route
           path="/risk-management/*"
           element={<PlaceholderPage title="Risk Management" />}

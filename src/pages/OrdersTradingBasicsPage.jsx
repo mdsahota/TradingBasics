@@ -1,4 +1,4 @@
-
+import SEO from '../components/seo/SEO'
 import {
   ArrowLeft,
   ArrowRight,
@@ -50,6 +50,13 @@ const orderTypes = [
 function OrdersTradingBasicsPage() {
   return (
     <>
+
+    <SEO
+    title="Orders and Trading Basics: Market, Limit and Stop Orders"
+    description="Understand market orders, limit orders, stop orders, order duration, and trade execution with this beginner-friendly guide to trading basics."
+    path="/learn/fundamentals/orders-trading-basics/"
+    />
+
       <section className="fundamentals-hero">
         <Container>
           <span className="eyebrow">

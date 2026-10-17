@@ -1,4 +1,4 @@
-
+import SEO from '../components/seo/SEO'
 import {
   ArrowLeft,
   ArrowRight,
@@ -13,6 +13,11 @@ import Button from '../components/common/Button'
 function WhatIsTradingPage() {
   return (
     <>
+    <SEO
+        title="What Is Trading? A Beginner's Guide"
+        description="Learn what trading is, how financial markets work, and how beginners can understand buying, selling, and risk management."
+        path="/learn/fundamentals/what-is-trading/"
+    />
       <section className="fundamentals-hero">
         <Container>
           <span className="eyebrow">

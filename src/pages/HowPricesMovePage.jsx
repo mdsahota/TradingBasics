@@ -1,4 +1,4 @@
-
+import SEO from '../components/seo/SEO'
 import {
   ArrowLeft,
   ArrowRight,
@@ -42,6 +42,13 @@ const priceFactors = [
 function HowPricesMovePage() {
   return (
     <>
+
+    <SEO
+    title="How Prices Move: Supply and Demand"
+    description="Learn how supply and demand, buying and selling pressure, bid-ask spreads, and candlestick charts influence financial market prices."
+    path="/learn/fundamentals/how-prices-move/"
+    />
+
       <section className="fundamentals-hero">
         <Container>
           <span className="eyebrow">
