@@ -9,6 +9,9 @@ import ToolsStrategiesSection from './components/layout/ToolsStrategiesSection'
 import LatestArticlesSection from './components/layout/LatestArticlesSection'
 import WhyTradingBasicsSection from './components/layout/WhyTradingBasicsSection'
 import FinalCTASection from './components/layout/FinalCTASection'
+import LearnPage from './pages/LearnPage'
+import FundamentalsPage from './pages/FundamentalsPage'
+import WhatIsTradingPage from './pages/WhatIsTradingPage'
 
 function HomePage() {
   return (
@@ -42,10 +45,9 @@ function App() {
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
-        <Route
-          path="/learn/*"
-          element={<PlaceholderPage title="Learn Trading" />}
-        />
+        <Route path="/learn/*" element={<LearnPage />} />
+        <Route path="/learn/fundamentals/" element={<FundamentalsPage />} />
+        <Route path="/learn/fundamentals/what-is-trading/" element={<WhatIsTradingPage />} />
         <Route
           path="/risk-management/*"
           element={<PlaceholderPage title="Risk Management" />}
