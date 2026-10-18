@@ -13,7 +13,7 @@ const articles = [
     description:
       'Understand the basic concepts of financial markets, how trading works, and what to learn before placing your first trade.',
     readTime: '6 min read',
-    href: '/blog/',
+    href: '/blog/trading-for-beginners/',
   },
   {
     category: 'RISK MANAGEMENT',

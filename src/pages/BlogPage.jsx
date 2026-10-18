@@ -7,6 +7,14 @@ import Button from '../components/common/Button'
 
 const blogTopics = [
   {
+    eyebrow: 'TRADING FOR BEGINNERS',
+    title: 'Trading for Beginners: Where Should You Start?',
+    description:
+      'Start learning trading step by step, understand financial markets and trading terminology, and discover how to practise while managing risk.',
+    href: '/blog/trading-for-beginners/',
+  },
+
+  {
     eyebrow: 'TRADING FUNDAMENTALS',
     title: 'Understanding How Financial Markets Work',
     description:

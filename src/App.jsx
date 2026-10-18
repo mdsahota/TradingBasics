@@ -28,6 +28,7 @@ import AffiliateDisclosurePage from './pages/AffiliateDisclosurePage'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 import BlogPage from './pages/BlogPage'
 import ScrollToTop from './components/common/ScrollToTop'
+import TradingForBeginners from './pages/TradingForBeginners'
 
 function HomePage() {
   return (
@@ -81,12 +82,14 @@ function App() {
         <Route path="/trading-strategies/*" element={<TradingStrategiesPage />} />
         <Route   path="/market-analysis/*"   element={<MarketAnalysisPage />} />
         <Route path="/risk-disclaimer/*" element={<RiskDisclaimerPage />} /> 
+        <Route path="/blog/trading-for-beginners/" element={<TradingForBeginners />} />
         <Route path="/blog/*" element={<BlogPage />} />
         <Route path="/about/*" element={<AboutPage />} />
         <Route path="/contact/*" element={<ContactPage />} />
         <Route path="/affiliate-disclosure/*" element={<AffiliateDisclosurePage />} />
         <Route path="/privacy-policy/*" element={<PrivacyPolicyPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
+
       </Route>
     </Routes>
     </>
