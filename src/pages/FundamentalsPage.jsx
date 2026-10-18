@@ -180,6 +180,40 @@ function FundamentalsPage() {
           </div>
         </Container>
       </section>
+            <section className="amazon-promo-section">
+        <Container>
+          <div className="amazon-promo">
+            <h2>Build Your Trading Knowledge</h2>
+
+            <p>
+              Explore books and resources on technical analysis,
+              candlestick patterns, and trading strategies.
+            </p>
+
+            <div className="amazon-promo__banner">
+              <a
+                href="https://amzn.to/3KQ7TbV"
+                target="_blank"
+                rel="sponsored nofollow noopener noreferrer"
+                aria-label="Explore trading books on Amazon"
+              >
+                <img
+                  src="/images/amazon-trading-books.png"
+                  alt="Build Your Trading Knowledge — Explore Trading Books"
+                  width="460"
+                  height="58"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <p className="amazon-promo__disclosure">
+              As an Amazon Associate, we earn from qualifying purchases.
+            </p>
+          </div>
+        </Container>
+      </section>
+
     </>
   )
 }

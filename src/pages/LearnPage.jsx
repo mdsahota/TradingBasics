@@ -126,6 +126,78 @@ function LearnPage() {
           </div>
         </Container>
       </section>
+
+      <section className="ibkr-promo-section">
+        <Container>
+          <div className="ibkr-promo">
+            <span className="eyebrow">BROKERAGE RESOURCES</span>
+
+            <h2>Explore Interactive Brokers</h2>
+
+            <p>
+              Compare brokerage fees, available markets, and account
+              requirements to decide whether Interactive Brokers
+              fits your trading needs.
+            </p>
+
+            <div className="ibkr-promo__banner">
+              <a
+                href="https://ibkr.com/referral/manohar512?utm_source=kamyaablab&utm_medium=affiliate&utm_campaign=homepage&utm_content=secondary_cta"
+                target="_blank"
+                rel="sponsored nofollow noopener noreferrer"
+                aria-label="Explore Interactive Brokers"
+              >
+                <img
+                  src="/images/interactive-brokers.png"
+                  alt="Interactive Brokers — Explore IBKR"
+                  width="468"
+                  height="60"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <p className="ibkr-promo__disclosure">
+              Referral link · We may receive compensation.
+            </p>
+          </div>
+        </Container>
+      </section>
+      
+      <section className="amazon-promo-section">
+        <Container>
+          <div className="amazon-promo">
+            <h2>Build Your Trading Knowledge</h2>
+
+            <p>
+              Explore books and resources on technical analysis,
+              candlestick patterns, and trading strategies.
+            </p>
+
+            <div className="amazon-promo__banner">
+              <a
+                href="https://amzn.to/3KQ7TbV"
+                target="_blank"
+                rel="sponsored nofollow noopener noreferrer"
+                aria-label="Explore trading books on Amazon"
+              >
+                <img
+                  src="/images/amazon-trading-books.png"
+                  alt="Build Your Trading Knowledge — Explore Trading Books"
+                  width="460"
+                  height="58"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <p className="amazon-promo__disclosure">
+              As an Amazon Associate, we earn from qualifying purchases.
+            </p>
+          </div>
+        </Container>
+      </section>
+
     </>
   )
 }

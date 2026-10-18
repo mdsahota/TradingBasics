@@ -2137,3 +2137,130 @@ a.content-card:hover .content-card__link {
     padding: 22px;
   }
 }
+/* Trading View */
+.tradingview-promo__banner {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+  overflow: hidden;
+}
+
+.tradingview-promo__banner a {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+}
+
+.tradingview-promo__banner img {
+  display: block;
+  width: 468px;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 6px;
+}
+
+
+.tradingview-promo p.tradingview-promo__disclosure {
+  font-size: 11px !important;
+  line-height: 1.3;
+  color: #777;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Interactive Brokers */
+
+.ibkr-promo-section {
+  padding: 48px 0;
+}
+
+.ibkr-promo {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ibkr-promo h2 {
+  margin: 10px 0 12px;
+}
+
+.ibkr-promo > p:not(.ibkr-promo__disclosure) {
+  max-width: 620px;
+  margin: 0 auto 20px;
+  line-height: 1.7;
+}
+
+.ibkr-promo__banner {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 0;
+}
+
+.ibkr-promo__banner a {
+  display: block;
+  width: 468px;
+  max-width: 100%;
+  line-height: 0;
+}
+
+.ibkr-promo__banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ibkr-promo__disclosure {
+  font-size: 10px !important;
+  line-height: 1.3;
+  color: #777;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Amazon Knowledge */
+.amazon-promo-section {
+  padding: 48px 0;
+}
+
+.amazon-promo {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.amazon-promo h2 {
+  margin: 10px 0 12px;
+}
+
+.amazon-promo > p:not(.amazon-promo__disclosure) {
+  max-width: 620px;
+  margin: 0 auto 20px;
+  line-height: 1.7;
+}
+
+.amazon-promo__banner {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 0;
+}
+
+.amazon-promo__banner a {
+  display: block;
+  width: 460px;
+  max-width: 100%;
+  line-height: 0;
+}
+
+.amazon-promo__banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.amazon-promo__disclosure {
+  font-size: 10px;
+  line-height: 1.4;
+  color: #777;
+  margin-top: 10px;
+}
