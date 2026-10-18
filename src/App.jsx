@@ -21,6 +21,13 @@ import RiskManagementPage from './pages/RiskManagementPage'
 import TechnicalAnalysisPage from './pages/TechnicalAnalysisPage'
 import TradingStrategiesPage from './pages/TradingStrategiesPage'
 import MarketAnalysisPage from './pages/MarketAnalysisPage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
+import RiskDisclaimerPage from './pages/RiskDisclaimerPage'
+import AffiliateDisclosurePage from './pages/AffiliateDisclosurePage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
+import BlogPage from './pages/BlogPage'
+import ScrollToTop from './components/common/ScrollToTop'
 
 function HomePage() {
   return (
@@ -56,6 +63,8 @@ function PlaceholderPage({ title }) {
 
 function App() {
   return (
+        <>
+      <ScrollToTop />
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
@@ -71,33 +80,16 @@ function App() {
         <Route path="/tools-strategies/*" element={<TechnicalAnalysisPage />} />
         <Route path="/trading-strategies/*" element={<TradingStrategiesPage />} />
         <Route   path="/market-analysis/*"   element={<MarketAnalysisPage />} />
-        <Route
-          path="/blog/*"
-          element={<PlaceholderPage title="TradingBasics Blog" />}
-        />
-        <Route
-          path="/about/*"
-          element={<PlaceholderPage title="About TradingBasics" />}
-        />
-        <Route
-          path="/contact/*"
-          element={<PlaceholderPage title="Contact Us" />}
-        />
-        <Route
-          path="/affiliate-disclosure/*"
-          element={<PlaceholderPage title="Affiliate Disclosure" />}
-        />
-        <Route
-          path="/risk-disclaimer/*"
-          element={<PlaceholderPage title="Risk Disclaimer" />}
-        />
-        <Route
-          path="/privacy-policy/*"
-          element={<PlaceholderPage title="Privacy Policy" />}
-        />
+        <Route path="/risk-disclaimer/*" element={<RiskDisclaimerPage />} /> 
+        <Route path="/blog/*" element={<BlogPage />} />
+        <Route path="/about/*" element={<AboutPage />} />
+        <Route path="/contact/*" element={<ContactPage />} />
+        <Route path="/affiliate-disclosure/*" element={<AffiliateDisclosurePage />} />
+        <Route path="/privacy-policy/*" element={<PrivacyPolicyPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
+    </>
   )
 }
 

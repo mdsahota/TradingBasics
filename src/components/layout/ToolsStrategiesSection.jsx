@@ -17,7 +17,7 @@ const topics = [
     title: 'Technical Analysis',
     description:
       'Learn about price charts, market trends, support and resistance, and indicators used to study market behaviour.',
-    href: '/tools-strategies/',
+    href: '/trading-strategies/',
     icon: <ChartNoAxesCombined size={24} />,
   },
   {

@@ -16,7 +16,7 @@ const topics = [
     title: 'Emotional Discipline',
     description:
       'Understand how fear, greed, frustration, and overconfidence can influence trading decisions.',
-    href: '/trading-psychology/',
+    href: '/learn/fundamentals/trading-psychology/',
     icon: <HeartPulse size={24} />,
   },
   {
@@ -24,7 +24,7 @@ const topics = [
     title: 'Patience & Consistency',
     description:
       'Learn why waiting for suitable opportunities and following a defined plan can help reduce impulsive decisions.',
-    href: '/trading-psychology/',
+    href: '/learn/fundamentals/trading-psychology/',
     icon: <Brain size={24} />,
   },
   {
@@ -32,7 +32,7 @@ const topics = [
     title: 'Trading Journals',
     description:
       'Explore how recording your decisions, trade rationale, and reflections can help you review your process.',
-    href: '/trading-psychology/',
+    href: '/learn/fundamentals/trading-psychology/',
     icon: <BookOpenCheck size={24} />,
   },
 ]
@@ -75,7 +75,7 @@ function TradingPsychologySection() {
         </div>
 
         <div className="trading-psychology-section__action">
-          <Button href="/trading-psychology/">
+          <Button href="/learn/fundamentals/trading-psychology/">
             Explore Trading Psychology <ArrowRight size={18} />
           </Button>
         </div>

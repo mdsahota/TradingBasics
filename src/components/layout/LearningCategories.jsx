@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import {
   BookOpen,
   ShieldCheck,
@@ -32,7 +32,7 @@ const categories = [
     title: 'Trading Psychology',
     description:
       'Understand emotional decision-making, patience, consistency, and how to avoid impulsive trading.',
-    href: '/trading-psychology/',
+    href: '/learn/fundamentals/trading-psychology/',
     icon: <Brain size={24} />,
   },
   {
@@ -70,15 +70,17 @@ function LearningCategories() {
           ))}
         </div>
 
-        <div className="learning-categories__note">
-          <span>
-            New to trading? Begin with the fundamentals and learn at your own
-            pace.
-          </span>
-          <a href="/learn/">
-            Explore learning resources <ArrowUpRight size={17} />
-          </a>
-        </div>
+
+            <div className="learning-categories__note">
+            <span>
+                New to trading? Begin with the fundamentals and learn at your own
+                pace.
+            </span>
+            <Link to="/learn/">
+                Explore learning resources <ArrowUpRight size={17} />
+            </Link>
+            </div>
+
       </Container>
     </section>
   )

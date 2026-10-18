@@ -9,7 +9,7 @@ const navigation = [
   { label: 'Home', path: '/' },
   { label: 'Learn', path: '/learn/' },
   { label: 'Risk Management', path: '/risk-management/' },
-  { label: 'Trading Psychology', path: '/trading-psychology/' },
+  { label: 'Trading Psychology', path: '/learn/fundamentals/trading-psychology/', },
   { label: 'Tools & Strategies', path: '/tools-strategies/' },
   { label: 'Blog', path: '/blog/' },
 ]

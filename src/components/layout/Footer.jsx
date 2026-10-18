@@ -28,7 +28,7 @@ function Footer() {
             <h3>Learn</h3>
             <Link to="/learn/">Trading Fundamentals</Link>
             <Link to="/risk-management/">Risk Management</Link>
-            <Link to="/trading-psychology/">Trading Psychology</Link>
+            <Link to="/learn/fundamentals/trading-psychology/"> Trading Psychology </Link>
             <Link to="/tools-strategies/">Tools & Strategies</Link>
           </div>
 

@@ -78,7 +78,7 @@ function HeroSection() {
                   <ArrowRight size={18} />
                 </Link>
 
-                <Link to="/trading-psychology/" className="hero-panel__step">
+                <Link to="/learn/fundamentals/trading-psychology/" className="hero-panel__step" >
                   <span className="hero-panel__step-number">03</span>
                   <span className="hero-panel__step-copy">
                     <strong>Build discipline</strong>

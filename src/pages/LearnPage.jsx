@@ -55,14 +55,16 @@ const learningPaths = [
     icon: <TrendingUp size={24} />,
   },
 
-{
-  eyebrow: 'MAKE INFORMED DECISIONS',
-  title: 'Market Analysis',
-  description:
-    'Learn how traders evaluate market conditions, interpret information, and develop a structured approach to trading decisions.',
-  href: '/market-analysis/',
-  icon: <ChartNoAxesCombined size={24} />,
-},
+
+  {
+    eyebrow: 'MAKE INFORMED DECISIONS',
+    title: 'Market Analysis',
+    description:
+      'Learn how traders evaluate market conditions, interpret information, and develop a structured approach to trading decisions.',
+    href: '/market-analysis/',
+    icon: <ChartNoAxesCombined size={24} />,
+  },
+
 
 ]
 
@@ -84,7 +86,8 @@ function LearnPage() {
           <p>
             Build your understanding of financial markets through
             approachable lessons on trading fundamentals, risk management,
-            psychology, and technical analysis.
+            trading psychology, technical analysis, trading strategies,
+            and market analysis.
           </p>
 
           <div className="learn-page-hero__actions">
