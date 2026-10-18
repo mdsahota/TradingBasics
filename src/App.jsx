@@ -30,6 +30,7 @@ import BlogPage from './pages/BlogPage'
 import ScrollToTop from './components/common/ScrollToTop'
 import TradingForBeginners from './pages/TradingForBeginners'
 import WhyRiskManagementMatters from './pages/WhyRiskManagementMatters'
+import YouDontNeedToBeRight from './pages/YouDontNeedToBeRight'
 
 
 function HomePage() {
@@ -86,6 +87,7 @@ function App() {
         <Route path="/risk-disclaimer/*" element={<RiskDisclaimerPage />} /> 
         <Route path="/blog/why-risk-management-matters/" element={<WhyRiskManagementMatters />} />
         <Route path="/blog/trading-for-beginners/" element={<TradingForBeginners />} />
+        <Route path="/blog/you-dont-need-to-be-right/" element={<YouDontNeedToBeRight />} />
         <Route path="/blog/*" element={<BlogPage />} />
         <Route path="/about/*" element={<AboutPage />} />
         <Route path="/contact/*" element={<ContactPage />} />

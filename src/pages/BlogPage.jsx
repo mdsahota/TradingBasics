@@ -6,7 +6,14 @@ import ContentCard from '../components/common/ContentCard'
 import Button from '../components/common/Button'
 
 const blogTopics = [
-{
+  {
+    eyebrow: 'TRADING PSYCHOLOGY',
+    title: "You Don't Need to Be Right: The Power of a Trading Plan",
+    description:
+      'Learn how to handle uncertainty, manage risk, and make disciplined trading decisions without needing to predict every market move.',
+    href: '/blog/you-dont-need-to-be-right/',
+  },
+  {
   eyebrow: 'RISK MANAGEMENT',
   title: 'Why Risk Management Matters in Trading',
   description:

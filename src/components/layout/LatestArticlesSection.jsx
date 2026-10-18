@@ -9,6 +9,13 @@ import Button from '../common/Button'
 
 const articles = [
   {
+    category: 'TRADING PSYCHOLOGY',
+    title: "You Don't Need to Be Right: The Power of a Trading Plan",
+    description:
+      'Learn how to handle uncertainty, manage risk, and make disciplined trading decisions without needing to predict every market move.',
+    href: '/blog/you-dont-need-to-be-right/',
+  },
+  {
     category: 'RISK MANAGEMENT',
     title: 'Why Risk Management Matters in Trading',
     description:
@@ -24,14 +31,7 @@ const articles = [
     readTime: '6 min read',
     href: '/blog/trading-for-beginners/',
   },
-  {
-    category: 'TRADING PSYCHOLOGY',
-    title: 'How to Avoid Emotional Trading Decisions',
-    description:
-      'Learn how fear, greed, and impatience can affect decisions and why a consistent trading plan matters.',
-    readTime: '7 min read',
-    href: '/blog/',
-  },
+
 ]
 
 
