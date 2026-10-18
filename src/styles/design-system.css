@@ -2264,3 +2264,7 @@ a.content-card:hover .content-card__link {
   color: #777;
   margin-top: 10px;
 }
+/* Description color in Hero */
+.fundamentals-hero__content p {
+  color: #cbd5e1;
+}

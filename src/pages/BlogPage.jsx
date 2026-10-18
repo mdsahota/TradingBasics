@@ -6,6 +6,14 @@ import ContentCard from '../components/common/ContentCard'
 import Button from '../components/common/Button'
 
 const blogTopics = [
+{
+  eyebrow: 'RISK MANAGEMENT',
+  title: 'Why Risk Management Matters in Trading',
+  description:
+    'Learn position sizing, stop-loss orders, risk-to-reward ratios, drawdowns, and practical ways to understand trading risk.',
+  href: '/blog/why-risk-management-matters/',
+},
+
   {
     eyebrow: 'TRADING FOR BEGINNERS',
     title: 'Trading for Beginners: Where Should You Start?',

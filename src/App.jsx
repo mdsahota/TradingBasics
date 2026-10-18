@@ -29,6 +29,8 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 import BlogPage from './pages/BlogPage'
 import ScrollToTop from './components/common/ScrollToTop'
 import TradingForBeginners from './pages/TradingForBeginners'
+import WhyRiskManagementMatters from './pages/WhyRiskManagementMatters'
+
 
 function HomePage() {
   return (
@@ -80,8 +82,9 @@ function App() {
         <Route path="/risk-management/*"   element={<RiskManagementPage />} />
         <Route path="/tools-strategies/*" element={<TechnicalAnalysisPage />} />
         <Route path="/trading-strategies/*" element={<TradingStrategiesPage />} />
-        <Route   path="/market-analysis/*"   element={<MarketAnalysisPage />} />
+        <Route path="/market-analysis/*"   element={<MarketAnalysisPage />} />
         <Route path="/risk-disclaimer/*" element={<RiskDisclaimerPage />} /> 
+        <Route path="/blog/why-risk-management-matters/" element={<WhyRiskManagementMatters />} />
         <Route path="/blog/trading-for-beginners/" element={<TradingForBeginners />} />
         <Route path="/blog/*" element={<BlogPage />} />
         <Route path="/about/*" element={<AboutPage />} />

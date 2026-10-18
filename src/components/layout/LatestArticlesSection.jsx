@@ -6,7 +6,16 @@ import SectionHeading from '../common/SectionHeading'
 import ContentCard from '../common/ContentCard'
 import Button from '../common/Button'
 
+
 const articles = [
+  {
+    category: 'RISK MANAGEMENT',
+    title: 'Why Risk Management Matters in Trading',
+    description:
+      'Explore position sizing, stop-loss planning, and ways to think more carefully about potential losses before entering a trade.',
+    readTime: '5 min read',
+    href: '/blog/why-risk-management-matters/',
+  },
   {
     category: 'TRADING FUNDAMENTALS',
     title: 'Trading for Beginners: Where Should You Start?',
@@ -14,14 +23,6 @@ const articles = [
       'Understand the basic concepts of financial markets, how trading works, and what to learn before placing your first trade.',
     readTime: '6 min read',
     href: '/blog/trading-for-beginners/',
-  },
-  {
-    category: 'RISK MANAGEMENT',
-    title: 'Why Risk Management Matters in Trading',
-    description:
-      'Explore position sizing, stop-loss planning, and ways to think more carefully about potential losses before entering a trade.',
-    readTime: '5 min read',
-    href: '/blog/',
   },
   {
     category: 'TRADING PSYCHOLOGY',
@@ -32,6 +33,7 @@ const articles = [
     href: '/blog/',
   },
 ]
+
 
 function LatestArticlesSection() {
   return (
