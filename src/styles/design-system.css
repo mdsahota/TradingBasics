@@ -2336,3 +2336,43 @@ a.content-card:hover .content-card__link {
 }
 
 
+/* Market globe in the article hero */
+.article-hero--market__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.8fr);
+  align-items: center;
+  gap: 32px;
+}
+
+.article-hero--market__content {
+  min-width: 0;
+}
+
+.article-hero--market__visual {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-hero--market__visual .market-globe {
+  width: 100%;
+  max-width: 420px;
+  height: 340px;
+}
+
+@media (max-width: 760px) {
+  .article-hero--market__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .article-hero--market__visual .market-globe {
+    max-width: 320px;
+    height: 260px;
+  }
+}
+
+
+

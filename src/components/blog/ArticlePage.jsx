@@ -1,4 +1,5 @@
 import TradingViewPromo from './TradingViewPromo';
+import MarketGlobe from '../visuals/MarketGlobe'
 import SEO from '../seo/SEO'
 import {
   ArrowLeft,
@@ -70,33 +71,43 @@ export default function ArticlePage({ article }) {
         canonical={article.seo.canonical}
       />
 
-      <section className="fundamentals-hero">
+
+        <section className="fundamentals-hero article-hero--market">
         <Container>
-          <span className="eyebrow">
-            {article.categories.join(' · ')}
-          </span>
+            <div className="article-hero--market__layout">
+            <div className="article-hero--market__content">
+                <span className="eyebrow">
+                {article.categories.join(' · ')}
+                </span>
 
-          <h1>{article.title}</h1>
+                <h1>{article.title}</h1>
 
-          <p>{article.introduction}</p>
+                <p>{article.introduction}</p>
 
-          <div className="fundamentals-hero__actions">
-            <Button href={article.primaryCta.href} variant="primary">
-              {article.primaryCta.label}
-            </Button>
+                <div className="fundamentals-hero__actions">
+                <Button href={article.primaryCta.href} variant="primary">
+                    {article.primaryCta.label}
+                </Button>
 
-            <Button href="/blog/" variant="secondary">
-              <ArrowLeft size={16} />
-              Back to Blog
-            </Button>
-          </div>
+                <Button href="/blog/" variant="secondary">
+                    <ArrowLeft size={16} />
+                    Back to Blog
+                </Button>
+                </div>
 
-          <div className="fundamentals-hero__notice">
-            <ShieldCheck size={20} />
-            <span>{article.educationalNotice}</span>
-          </div>
+                <div className="fundamentals-hero__notice">
+                <ShieldCheck size={20} />
+                <span>{article.educationalNotice}</span>
+                </div>
+            </div>
+
+            <div className="article-hero--market__visual">
+                <MarketGlobe />
+            </div>
+            </div>
         </Container>
-      </section>
+        </section>
+
 
       <section className="lesson-content">
         <Container>

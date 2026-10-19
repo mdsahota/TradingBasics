@@ -34,6 +34,7 @@ import YouDontNeedToBeRight from './pages/YouDontNeedToBeRight'
 import LadderTrading from './pages/ladder-trading'
 import HowToBecomeABetterTrader from './pages/how-to-become-a-better-trader'
 import GlobePreviewPage from './pages/GlobePreviewPage'
+import MarketGlobePreviewPage from './pages/MarketGlobePreviewPage'
 
 
 function HomePage() {
@@ -100,6 +101,7 @@ function App() {
         <Route path="/privacy-policy/*" element={<PrivacyPolicyPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/globe-preview" element={<GlobePreviewPage />} />
+        <Route path="/market-globe-preview" element={<MarketGlobePreviewPage />} />
 
       </Route>
     </Routes>
