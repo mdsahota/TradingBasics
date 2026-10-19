@@ -40,8 +40,8 @@ try {
       console.log(`Rendering ${route}`)
 
       const response = await page.goto(url, {
-        waitUntil: 'networkidle0',
-        timeout: 60000,
+        waitUntil: 'domcontentloaded',
+        timeout: 30000,
       })
 
       if (!response || !response.ok()) {
