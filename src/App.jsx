@@ -33,6 +33,7 @@ import WhyRiskManagementMatters from './pages/WhyRiskManagementMatters'
 import YouDontNeedToBeRight from './pages/YouDontNeedToBeRight'
 import LadderTrading from './pages/ladder-trading'
 import HowToBecomeABetterTrader from './pages/how-to-become-a-better-trader'
+import GlobePreviewPage from './pages/GlobePreviewPage'
 
 
 function HomePage() {
@@ -98,6 +99,7 @@ function App() {
         <Route path="/affiliate-disclosure/*" element={<AffiliateDisclosurePage />} />
         <Route path="/privacy-policy/*" element={<PrivacyPolicyPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/globe-preview" element={<GlobePreviewPage />} />
 
       </Route>
     </Routes>

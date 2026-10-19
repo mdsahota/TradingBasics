@@ -3,12 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "build:seo": "vite build && start-server-and-test \"vite preview --host 127.0.0.1 --port 4173 --strictPort\" http://127.0.0.1:4173 \"node scripts/prerender.js\"",
-  "lint": "eslint .",
-  "preview": "vite preview"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:seo": "vite build && start-server-and-test \"vite preview --host 127.0.0.1 --port 4173 --strictPort\" http://127.0.0.1:4173 \"node scripts/prerender.js\"",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
     "lucide-react": "^1.59.0",
@@ -17,7 +17,8 @@
     "react-helmet-async": "^3.0.0",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.18.4",
-    "remark-gfm": "^4.0.1"
+    "remark-gfm": "^4.0.1",
+    "three": "^0.186.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

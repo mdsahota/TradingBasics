@@ -569,9 +569,8 @@ a.content-card:hover .content-card__link {
   position: relative;
   overflow: hidden;
   padding: 88px 0 96px;
-  background:
-    radial-gradient(ellipse at 85% 30%, rgba(0, 184, 169, 0.10), transparent 38%),
-    var(--color-background);
+  background: #F5F7FA;
+    
 }
 
 .hero-section__grid {
@@ -633,23 +632,13 @@ a.content-card:hover .content-card__link {
   color: var(--color-accent);
 }
 
-.hero-section__visual {
-  position: relative;
-  display: grid;
-  min-height: 430px;
-  place-items: center;
-}
+
 
 .hero-panel {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 480px;
-  padding: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: var(--card-radius);
-  background: var(--color-surface);
-  box-shadow: var(--card-shadow);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .hero-panel__top {
@@ -2281,4 +2270,69 @@ a.content-card:hover .content-card__link {
 .article-section ul {
   margin-bottom: 1rem;
 }
+
+/* TradingBasics: floating globe background */
+
+.hero-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #F5F7FA;
+}
+
+.hero-section__grid {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section__content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section__visual {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hero-section__globe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  width: min(90vw, 1000px);
+  height: 95%;
+  min-height: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.hero-section__globe .globe-animation {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  background: transparent;
+}
+
+.hero-section__globe canvas {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .hero-section__globe {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    width: 125vw;
+    height: 100%;
+    opacity: 0.16;
+    transform: translate(-50%, -50%);
+  }
+}
+
 

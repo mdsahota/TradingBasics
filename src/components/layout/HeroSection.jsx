@@ -4,10 +4,17 @@ import { ArrowRight, ShieldCheck, BookOpen, TrendingUp } from 'lucide-react'
 import Container from '../common/Container'
 import Eyebrow from '../common/Eyebrow'
 import Button from '../common/Button'
+import GlobeAnimation from '../visuals/GlobeAnimation'
 
 function HeroSection() {
   return (
     <section className="hero-section">
+      <div className="hero-section__visual" aria-hidden="true">
+        <div className="hero-section__globe">
+          <GlobeAnimation />
+        </div>
+      </div>
+
       <Container>
         <div className="hero-section__grid">
           <div className="hero-section__content">
@@ -47,13 +54,16 @@ function HeroSection() {
             </div>
           </div>
 
-          <div className="hero-section__visual" aria-label="Trading education highlights">
+          <div className="hero-section__panel-wrap">
             <div className="hero-panel">
               <div className="hero-panel__top">
                 <div>
-                  <span className="hero-panel__label">YOUR LEARNING JOURNEY</span>
+                  <span className="hero-panel__label">
+                    YOUR LEARNING JOURNEY
+                  </span>
                   <h2>Build a stronger foundation</h2>
                 </div>
+
                 <span className="hero-panel__icon">
                   <TrendingUp size={23} />
                 </span>
@@ -78,7 +88,10 @@ function HeroSection() {
                   <ArrowRight size={18} />
                 </Link>
 
-                <Link to="/learn/fundamentals/trading-psychology/" className="hero-panel__step" >
+                <Link
+                  to="/learn/fundamentals/trading-psychology/"
+                  className="hero-panel__step"
+                >
                   <span className="hero-panel__step-number">03</span>
                   <span className="hero-panel__step-copy">
                     <strong>Build discipline</strong>

@@ -1,4 +1,5 @@
 import ArticlePage from '../components/blog/ArticlePage'
+
 const article = {
   seo: {
     title:
