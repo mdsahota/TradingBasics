@@ -31,6 +31,8 @@ import ScrollToTop from './components/common/ScrollToTop'
 import TradingForBeginners from './pages/TradingForBeginners'
 import WhyRiskManagementMatters from './pages/WhyRiskManagementMatters'
 import YouDontNeedToBeRight from './pages/YouDontNeedToBeRight'
+import LadderTrading from './pages/ladder-trading'
+import HowToBecomeABetterTrader from './pages/how-to-become-a-better-trader'
 
 
 function HomePage() {
@@ -88,6 +90,8 @@ function App() {
         <Route path="/blog/why-risk-management-matters/" element={<WhyRiskManagementMatters />} />
         <Route path="/blog/trading-for-beginners/" element={<TradingForBeginners />} />
         <Route path="/blog/you-dont-need-to-be-right/" element={<YouDontNeedToBeRight />} />
+        <Route path="/blog/ladder-trading/" element={<LadderTrading />} />
+        <Route path="/blog/how-to-become-a-better-trader/" element={<HowToBecomeABetterTrader />} />
         <Route path="/blog/*" element={<BlogPage />} />
         <Route path="/about/*" element={<AboutPage />} />
         <Route path="/contact/*" element={<ContactPage />} />

@@ -2268,3 +2268,17 @@ a.content-card:hover .content-card__link {
 .fundamentals-hero__content p {
   color: #cbd5e1;
 }
+/* Some css addition when we change how to use structure in articles */
+.article-section {
+  margin-bottom: 2rem;
+}
+
+.article-section h2 {
+  margin-bottom: 1rem;
+}
+
+.article-section p,
+.article-section ul {
+  margin-bottom: 1rem;
+}
+

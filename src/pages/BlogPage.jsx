@@ -4,8 +4,25 @@ import Container from '../components/common/Container'
 import SectionHeading from '../components/common/SectionHeading'
 import ContentCard from '../components/common/ContentCard'
 import Button from '../components/common/Button'
+import { useState } from 'react'
 
 const blogTopics = [
+  {
+  eyebrow: 'TRADING PSYCHOLOGY',
+  title: 'Ladder Trading: Climb Smart, Avoid the Snake',
+  description:
+    'Discover how greed, overconfidence, and impulsive decisions can turn a promising trading climb into a costly setback. Learn to manage risk and protect your progress.',
+  href: '/blog/ladder-trading/',
+},
+
+{
+  eyebrow: 'TRADING PSYCHOLOGY',
+  title: 'How to Become a Better Trader: Focus on Your Most Expensive Mistakes',
+  description:
+    'Your biggest trading improvements may come from fixing a few costly habits. Learn how to identify recurring mistakes, use feedback effectively, and build a process for better trading decisions.',
+  href: '/blog/how-to-become-a-better-trader/',
+},
+
   {
     eyebrow: 'TRADING PSYCHOLOGY',
     title: "You Don't Need to Be Right: The Power of a Trading Plan",
@@ -73,7 +90,12 @@ const blogTopics = [
   },
 ]
 
+
 function BlogPage() {
+  const [showAll, setShowAll] = useState(false)
+
+  const visibleTopics = showAll ? blogTopics : blogTopics.slice(0, 9)
+
   return (
     <>
       <SEO
@@ -116,9 +138,9 @@ function BlogPage() {
           />
 
           <div className="learn-page-paths__grid">
-            {blogTopics.map((topic) => (
+            {visibleTopics.map((topic) => (
               <ContentCard
-                key={topic.title}
+                key={topic.href}
                 eyebrow={topic.eyebrow}
                 title={topic.title}
                 description={topic.description}
@@ -128,11 +150,13 @@ function BlogPage() {
             ))}
           </div>
 
-          <div className="learn-page-hero__actions">
-            <Button href="/learn/fundamentals/">
-              Start with the Fundamentals
-            </Button>
-          </div>
+          {blogTopics.length > 9 && (
+            <div className="learn-page-hero__actions">
+              <Button onClick={() => setShowAll((prev) => !prev)}>
+                {showAll ? 'Show Fewer Articles' : 'Show All Articles'}
+              </Button>
+            </div>
+          )}
         </Container>
       </section>
     </>
@@ -140,3 +164,4 @@ function BlogPage() {
 }
 
 export default BlogPage
+
