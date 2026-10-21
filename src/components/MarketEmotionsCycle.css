@@ -1,0 +1,415 @@
+
+.market-emotions {
+  position: relative;
+  overflow: hidden;
+  padding: 96px 24px;
+  background:
+    radial-gradient(ellipse at 12% 20%, rgba(0, 184, 169, 0.09), transparent 36%),
+    radial-gradient(ellipse at 90% 80%, rgba(59, 130, 246, 0.09), transparent 34%),
+    #101828;
+  color: #f5f7fa;
+}
+
+.market-emotions *,
+.market-emotions *::before,
+.market-emotions *::after {
+  box-sizing: border-box;
+}
+
+.market-emotions__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.market-emotions__intro {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.market-emotions__eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #00b8a9;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.market-emotions__intro h2 {
+  margin: 0 0 18px;
+  color: #f5f7fa;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.market-emotions__intro h2 span {
+  color: #00b8a9;
+}
+
+.market-emotions__intro > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #aab5c5;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.market-emotions__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.8fr);
+  align-items: stretch;
+  gap: 24px;
+}
+
+.market-emotions__visual,
+.market-emotions__story {
+  min-width: 0;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 12px;
+  background: rgba(17, 30, 49, 0.86);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+}
+
+.market-emotions__visual {
+  padding: 24px 24px 20px;
+  min-width: 0;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 12px;
+  background: rgba(17, 30, 49, 0.86);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+}
+
+.market-emotions__visual-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #8493a8;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.market-emotions__svg {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  margin: 8px auto 0;
+  overflow: visible;
+}
+
+.market-emotions__track {
+  fill: none;
+  stroke: rgba(148, 163, 184, 0.22);
+  stroke-width: 2;
+  stroke-dasharray: 4 7;
+}
+
+.market-emotions__track-active {
+  fill: none;
+  stroke: url(#emotionPathGradient);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.7s ease;
+}
+
+.market-emotions__node {
+  transition: r 0.35s ease, fill 0.35s ease;
+}
+
+.market-emotions__label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: fill 0.3s ease, font-weight 0.3s ease;
+}
+
+.market-emotions__label.is-active {
+  font-weight: 800;
+}
+
+.market-emotions__marker {
+  pointer-events: none;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.market-emotions__center-title {
+  fill: #f5f7fa;
+  font-family: "Manrope", sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+}
+
+.market-emotions__center-caption {
+  fill: #8493a8;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.market-emotions__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 12px;
+}
+
+.market-emotions__control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 13px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 8px;
+  background: transparent;
+  color: #dce5ef;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.market-emotions__control:hover {
+  border-color: #00b8a9;
+  background: rgba(0, 184, 169, 0.08);
+}
+
+.market-emotions__control:active {
+  transform: translateY(1px);
+}
+
+.market-emotions__control--primary {
+  border-color: #00b8a9;
+  background: #00b8a9;
+  color: #101828;
+}
+
+.market-emotions__control--primary:hover {
+  background: #31d2c4;
+  color: #101828;
+}
+
+.market-emotions__story {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.market-emotions__story-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.market-emotions__stage-number,
+.market-emotions__phase,
+.market-emotions__lesson > span {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+}
+
+.market-emotions__stage-number {
+  color: #8493a8;
+}
+
+.market-emotions__stage-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--stage-color);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--stage-color) 55%, transparent);
+  transition: background 0.3s ease;
+}
+
+.market-emotions__phase {
+  color: var(--stage-color);
+}
+
+.market-emotions__story h3 {
+  margin: 12px 0 16px;
+  color: #f5f7fa;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(27px, 3vw, 36px);
+  font-weight: 800;
+  line-height: 1.2;
+  animation: marketEmotionReveal 0.4s ease both;
+}
+
+.market-emotions__description {
+  margin: 0;
+  color: #aab5c5;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.9;
+  animation: marketEmotionReveal 0.4s ease both;
+}
+
+.market-emotions__lesson {
+  margin-top: 28px;
+  padding: 18px;
+  border: 1px solid rgba(0, 184, 169, 0.18);
+  border-left: 3px solid var(--stage-color);
+  border-radius: 8px;
+  background: rgba(0, 184, 169, 0.045);
+}
+
+.market-emotions__lesson > span {
+  color: var(--stage-color);
+}
+
+.market-emotions__lesson p {
+  margin: 10px 0 0;
+  color: #e2e8f0;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.market-emotions__progress {
+  display: flex;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 30px;
+}
+
+.market-emotions__progress-step {
+  flex: 1;
+  height: 5px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(148, 163, 184, 0.22);
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.market-emotions__progress-step.is-active {
+  background: var(--stage-color);
+  transform: scaleY(1.5);
+}
+
+.market-emotions__progress-step:focus-visible,
+.market-emotions__control:focus-visible {
+  outline: 2px solid #00b8a9;
+  outline-offset: 4px;
+}
+
+.market-emotions__footer {
+  margin: 16px 0 0;
+  color: #8493a8;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.market-emotions__disclaimer {
+  max-width: 760px;
+  margin: 24px auto 0;
+  color: #8493a8;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+@keyframes marketEmotionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .market-emotions {
+    padding: 72px 20px;
+  }
+
+  .market-emotions__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .market-emotions__story {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 540px) {
+  .market-emotions {
+    padding: 56px 16px;
+  }
+
+  .market-emotions__intro {
+    margin-bottom: 30px;
+  }
+
+  .market-emotions__intro > p {
+    font-size: 14px;
+  }
+
+  .market-emotions__visual {
+    padding: 16px 8px 14px;
+  }
+
+  .market-emotions__label {
+    font-size: 17px;
+  }
+
+  .market-emotions__center-title {
+    font-size: 21px;
+  }
+
+  .market-emotions__center-caption {
+    font-size: 14px;
+  }
+
+  .market-emotions__controls {
+    gap: 7px;
+  }
+
+  .market-emotions__control {
+    min-height: 40px;
+    padding: 9px;
+    font-size: 11px;
+  }
+
+  .market-emotions__story {
+    min-height: 340px;
+    padding: 22px;
+  }
+
+  .market-emotions__story-top {
+    margin-bottom: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .market-emotions *,
+  .market-emotions *::before,
+  .market-emotions *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
