@@ -1,0 +1,909 @@
+
+/* ==========================================
+   PURPOSE: Main page layout and typography
+   ========================================== */
+
+.strategy-navigator {
+  width: 100%;
+  color: #101828;
+  background: #f5f7fa;
+}
+
+.strategy-header {
+  padding: 42px 20px 36px;
+  text-align: center;
+  background: #101828;
+}
+
+.strategy-eyebrow {
+  display: block;
+  color: #00b8a9;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.strategy-header h1 {
+  margin: 12px 0;
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.strategy-header p {
+  margin: 0;
+  color: #d0d5dd;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* PURPOSE: Center the vertical flow within the page */
+.strategy-workspace {
+  padding: 40px 20px 64px;
+}
+
+.strategy-flow {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* PURPOSE: Introduce the decision-flow section */
+.strategy-flow__intro {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.strategy-flow__intro h2 {
+  margin: 8px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+}
+
+.strategy-flow__intro p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* PURPOSE: Style each main step card */
+.flow-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22px;
+  border: 1px solid #e4e7ec;
+  border-left: 4px solid #3b82f6;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(16, 24, 40, 0.045);
+}
+
+.flow-card--start {
+  border-left-color: #00b8a9;
+  background: #f7fdfc;
+}
+
+.flow-card--analyse {
+  border-left-color: #3b82f6;
+}
+
+.flow-card--risk {
+  border-left-color: #f4b740;
+  background: #fffdf7;
+}
+
+.flow-card--finish {
+  border-left-color: #00b8a9;
+  background: #f7fdfc;
+}
+
+.flow-card__number {
+  display: flex;
+  flex: 0 0 42px;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #e6f8f5;
+  color: #008f83;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.flow-card--analyse .flow-card__number {
+  background: #edf3ff;
+  color: #2563eb;
+}
+
+.flow-card--risk .flow-card__number {
+  background: #fff2d6;
+  color: #9a6700;
+}
+
+.flow-card__content {
+  min-width: 0;
+}
+
+.flow-card__eyebrow {
+  display: block;
+  margin-bottom: 6px;
+  color: #667085;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.flow-card h2 {
+  margin: 0 0 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.flow-card p {
+  margin: 0;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* PURPOSE: Connect each step with a vertical line and arrow */
+.flow-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 54px;
+}
+
+.flow-connector__line {
+  width: 2px;
+  flex: 1;
+  background: #b9e9e3;
+}
+
+.flow-connector__arrow {
+  margin-top: -2px;
+  color: #00a99b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* PURPOSE: Group the three possible market conditions */
+.market-branch {
+  padding: 22px;
+  border: 1px solid #dce5ee;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(16, 24, 40, 0.045);
+}
+
+.market-branch__heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.market-branch__heading > div {
+  min-width: 0;
+}
+
+.market-branch__heading h2 {
+  margin: 0 0 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.market-branch__heading p {
+  margin: 0;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* PURPOSE: Stack bullish, sideways and bearish cards vertically */
+.market-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.market-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid #e4e7ec;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.market-card--bullish {
+  border-left: 3px solid #00b8a9;
+}
+
+.market-card--sideways {
+  border-left: 3px solid #f4b740;
+}
+
+.market-card--bearish {
+  border-left: 3px solid #ef6b73;
+}
+
+.market-card__symbol {
+  display: flex;
+  flex: 0 0 36px;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: #e6f8f5;
+  color: #008f83;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.market-card--sideways .market-card__symbol {
+  background: #fff4db;
+  color: #9a6700;
+}
+
+.market-card--bearish .market-card__symbol {
+  background: #fff0f0;
+  color: #c03945;
+}
+
+.market-card__body {
+  min-width: 0;
+}
+
+.market-card h3 {
+  margin: 0 0 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+}
+
+.market-card p {
+  margin: 0 0 10px;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.market-card__focus {
+  color: #344054;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* PURPOSE: Style the educational disclaimer below the flow */
+.strategy-disclaimer {
+  margin: 28px 0 0;
+  color: #667085;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* PURPOSE: Make cards comfortable to read on mobile */
+@media (max-width: 600px) {
+  .strategy-header {
+    padding: 32px 18px;
+  }
+
+  .strategy-workspace {
+    padding: 28px 16px 44px;
+  }
+
+  .strategy-flow__intro h2 {
+    font-size: 22px;
+  }
+
+  .flow-card {
+    gap: 12px;
+    padding: 17px;
+  }
+
+  .flow-card__number {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .flow-card h2,
+  .market-branch__heading h2 {
+    font-size: 16px;
+  }
+
+  .market-branch {
+    padding: 16px;
+  }
+
+  .market-branch__heading {
+    gap: 12px;
+  }
+
+  .market-card {
+    gap: 11px;
+    padding: 13px;
+  }
+}
+
+/* ANIMATED CONNECTORS — subtle teal dots flowing down the decision path */
+
+@keyframes strategy-line-flow {
+  to {
+    background-position: 0 12px;
+  }
+}
+
+/* Keep the existing connector layout and animate only its line */
+.strategy-connector {
+  background-image: radial-gradient(
+    circle,
+    #00B8A9 1.5px,
+    transparent 1.8px
+  );
+  background-size: 3px 12px;
+  background-position: 0 0;
+  animation: strategy-line-flow 3s linear infinite;
+}
+
+/* Respect visitors who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .strategy-connector {
+    animation: none;
+  }
+}
+
+/* PURPOSE: Animate teal dots down the existing vertical connector lines */
+.flow-connector__line.strategy-connector {
+  width: 2px;
+  background-color: transparent;
+  background-image: radial-gradient(
+    circle,
+    #00B8A9 1.5px,
+    transparent 1.8px
+  );
+  background-size: 3px 12px;
+  background-repeat: repeat-y;
+  animation: strategy-line-flow 1.8s linear infinite;
+}
+
+/* PURPOSE: Disable connector movement for reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .flow-connector__line.strategy-connector {
+    animation: none;
+  }
+}
+/* PURPOSE: Gently pulse the arrows to guide users through the trading flow */
+.flow-connector__arrow {
+  animation: strategy-arrow-pulse 2s ease-in-out infinite;
+}
+
+/* PURPOSE: Create a subtle up-and-down emphasis without moving the layout */
+@keyframes strategy-arrow-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(3px);
+  }
+}
+
+/* PURPOSE: Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .flow-connector__arrow {
+    animation: none;
+  }
+}
+
+/* PURPOSE: Add a smooth, polished hover effect to market-condition cards */
+.market-card {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+/* PURPOSE: Lift the selected card slightly and highlight its border */
+.market-card:hover {
+  transform: translateY(-4px);
+  border-color: #00B8A9;
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.12);
+}
+
+/* PURPOSE: Keep keyboard navigation visually accessible */
+.market-card:focus-visible {
+  outline: 2px solid #00B8A9;
+  outline-offset: 4px;
+}
+
+/* PURPOSE: Avoid hover motion for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .market-card {
+    transition: none;
+  }
+
+  .market-card:hover {
+    transform: none;
+  }
+}
+
+/* PURPOSE: Keep a clear visual highlight on the selected market card */
+.market-card--selected {
+  border: 2px solid #00B8A9;
+  box-shadow: 0 0 0 3px rgba(0, 184, 169, 0.14),
+    0 10px 24px rgba(16, 24, 40, 0.12);
+  transform: translateY(-3px);
+}
+
+/* PURPOSE: Style the market learning tip as a distinct information panel */
+.market-learning-tip {
+  margin-top: 18px;
+  padding: 20px;
+  background: #f0fbf9;
+  border: 1px solid rgba(0, 184, 169, 0.35);
+  border-left: 4px solid #00B8A9;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.05);
+  animation: learning-tip-appear 240ms ease-out;
+}
+
+/* PURPOSE: Keep the learning panel heading clear and readable */
+.market-learning-tip h3 {
+  margin: 8px 0;
+  color: #101828;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* PURPOSE: Improve readability of the educational tip */
+.market-learning-tip p {
+  margin: 0;
+  color: #475467;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* PURPOSE: Introduce the learning panel smoothly */
+@keyframes learning-tip-appear {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* PURPOSE: Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .market-learning-tip {
+    animation: none;
+  }
+}
+
+/* PURPOSE: Visually separate market-specific risk guidance */
+.market-risk-reminder {
+  margin-top: 16px;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+}
+
+/* PURPOSE: Highlight the risk reminder heading */
+.market-risk-reminder strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #101828;
+  font-size: 13px;
+}
+
+/* PURPOSE: Keep risk guidance readable and easy to scan */
+.market-risk-reminder p {
+  margin: 0;
+  color: #475467;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* PURPOSE: Arrange the risk step and calculator as one connected section */
+.risk-step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* PURPOSE: Style the interactive risk calculator panel */
+.risk-calculator {
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+}
+
+/* PURPOSE: Lay out calculator labels and inputs */
+.risk-calculator__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+/* PURPOSE: Make input labels easy to read */
+.risk-calculator__field label {
+  color: #101828;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* PURPOSE: Keep number inputs consistent with the TradingBasics design */
+.risk-calculator__field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #101828;
+  font: inherit;
+  outline: none;
+}
+
+/* PURPOSE: Highlight the input currently being edited */
+.risk-calculator__field input:focus {
+  border-color: #00B8A9;
+  box-shadow: 0 0 0 3px rgba(0, 184, 169, 0.14);
+}
+
+/* PURPOSE: Highlight the calculated risk amount */
+.risk-calculator__result {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+  background: #f0fbf9;
+  border-left: 4px solid #00B8A9;
+  border-radius: 8px;
+}
+
+/* PURPOSE: Style the result label */
+.risk-calculator__result span {
+  color: #475467;
+  font-size: 13px;
+}
+
+/* PURPOSE: Make the calculated dollar amount prominent */
+.risk-calculator__result strong {
+  color: #101828;
+  font-size: 28px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+/* PURPOSE: Explain the limitations of the risk estimate */
+.risk-calculator__note {
+  margin: 14px 0 0;
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* PURPOSE: Style the position-sizing calculator panel */
+.position-calculator {
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+}
+
+/* PURPOSE: Style the position calculator heading and introduction */
+.position-calculator__heading {
+  margin-bottom: 22px;
+}
+
+.position-calculator__heading h3 {
+  margin: 8px 0;
+  color: #101828;
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.position-calculator__heading p {
+  margin: 0;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* PURPOSE: Arrange calculator fields in a responsive grid */
+.position-calculator__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 18px;
+}
+
+/* PURPOSE: Highlight the calculated position size */
+.position-calculator__result {
+  padding: 18px;
+  background: #f0fbf9;
+  border-left: 4px solid #00B8A9;
+  border-radius: 8px;
+}
+
+/* PURPOSE: Style the result label */
+.position-calculator__result > span {
+  display: block;
+  margin-bottom: 8px;
+  color: #475467;
+  font-size: 13px;
+}
+
+/* PURPOSE: Emphasize the estimated share quantity */
+.position-calculator__result > strong {
+  display: block;
+  color: #101828;
+  font-size: 28px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+/* PURPOSE: Separate the supporting calculations visually */
+.position-calculator__details {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #d9f0eb;
+}
+
+.position-calculator__details p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px;
+  margin: 8px 0;
+  color: #475467;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.position-calculator__details strong {
+  color: #101828;
+}
+
+/* PURPOSE: Explain assumptions behind the position-size estimate */
+.position-calculator__note {
+  margin: 14px 0 0;
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* PURPOSE: Keep the calculator comfortable to use on mobile screens */
+@media (max-width: 600px) {
+  .position-calculator {
+    padding: 16px;
+  }
+
+  .position-calculator__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .position-calculator__result > strong {
+    font-size: 24px;
+  }
+}
+
+
+/* PURPOSE: Arrange the final trading checklist within Step 05 */
+.trading-checklist {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* PURPOSE: Stack checklist items with comfortable spacing */
+.trading-checklist__items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* PURPOSE: Style each checklist item as an interactive row */
+.trading-checklist__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #f5f7fa;
+  border: 1px solid #e4e7ec;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+/* PURPOSE: Highlight a checklist row when its checkbox is selected */
+.trading-checklist__item:has(input:checked) {
+  background: #f0fbf9;
+  border-color: rgba(0, 184, 169, 0.55);
+}
+
+/* PURPOSE: Style accessible checkboxes using the brand teal */
+.trading-checklist__item input {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  accent-color: #00B8A9;
+  cursor: pointer;
+}
+
+/* PURPOSE: Keep checklist text readable and easy to scan */
+.trading-checklist__item span {
+  color: #344054;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* PURPOSE: Display checklist progress clearly */
+.trading-checklist__status {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: #f5f7fa;
+  border-left: 4px solid #98a2b3;
+  border-radius: 8px;
+  color: #475467;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* PURPOSE: Celebrate completion without implying a trade is guaranteed */
+.trading-checklist__status--complete {
+  background: #f0fbf9;
+  border-left-color: #00B8A9;
+  color: #06756d;
+}
+
+/* PURPOSE: Provide visible keyboard focus for checklist controls */
+.trading-checklist__item input:focus-visible {
+  outline: 3px solid rgba(0, 184, 169, 0.35);
+  outline-offset: 3px;
+}
+
+/* PURPOSE: Respect visitors who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .trading-checklist__item {
+    transition: none;
+  }
+}
+
+/* PURPOSE: Improve checklist spacing on narrow screens */
+@media (max-width: 600px) {
+  .trading-checklist__item {
+    padding: 12px;
+  }
+
+  .trading-checklist__item span {
+    font-size: 13px;
+  }
+
+  .trading-checklist__status {
+    padding: 12px;
+  }
+}
+
+/* PURPOSE: Style the reset button beneath the final checklist */
+.trading-checklist__reset {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+  padding: 10px 16px;
+  background: #ffffff;
+  color: #344054;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+/* PURPOSE: Give the reset button a subtle hover state */
+.trading-checklist__reset:not(:disabled):hover {
+  background: #f5f7fa;
+  border-color: #00B8A9;
+}
+
+/* PURPOSE: Show when the reset button cannot be used */
+.trading-checklist__reset:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* PURPOSE: Make keyboard focus visible and accessible */
+.trading-checklist__reset:focus-visible {
+  outline: 3px solid rgba(0, 184, 169, 0.35);
+  outline-offset: 3px;
+}
+
+/* PURPOSE: Avoid unnecessary animation for motion-sensitive users */
+@media (prefers-reduced-motion: reduce) {
+  .trading-checklist__reset {
+    transition: none;
+  }
+}
+
+/* PURPOSE: Position the live readiness status above the checklist title */
+.trading-checklist__readiness {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 10px;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+/* PURPOSE: Indicate that every checklist item has been completed */
+.trading-checklist__readiness--ready {
+  color: #06756d;
+  background: #f0fbf9;
+  border-color: rgba(0, 184, 169, 0.35);
+}
+
+/* PURPOSE: Indicate that checklist items still need attention */
+.trading-checklist__readiness--pending {
+  color: #946200;
+  background: #fff8e8;
+  border-color: #f4d58a;
+}
+
+/* PURPOSE: Add a small visual status indicator */
+.trading-checklist__readiness-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* PURPOSE: Respect visitors who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .trading-checklist__readiness {
+    transition: none;
+  }
+}

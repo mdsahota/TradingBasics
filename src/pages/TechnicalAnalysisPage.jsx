@@ -218,6 +218,22 @@ function TechnicalAnalysisPage() {
             </div>
           </div>
 
+          <div className="lesson-content__article">
+            <span className="eyebrow">INTERACTIVE TRADING TOOL</span>
+            <h2>Plan your trade with the Trading Strategy Navigator</h2>
+
+            <p>
+              Before entering a trade, assess market conditions, review your
+              trading plan, calculate position size, and check your risk.
+              Use this interactive tool to build a more disciplined
+              pre-trade routine.
+            </p>
+
+            <Button href="/trading-strategy-navigator/">
+              Open Strategy Navigator <ArrowRight size={18} />
+            </Button>
+          </div>
+
           <div className="lesson-content__next">
             <h2>Continue learning</h2>
             <p>
