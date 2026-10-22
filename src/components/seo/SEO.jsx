@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 
 const SITE_NAME = 'TradingBasics'
 const SITE_URL = 'https://tradingbasics.ca'
-const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`
+const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`
 
 export default function SEO({
   title,
