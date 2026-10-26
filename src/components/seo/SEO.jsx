@@ -9,6 +9,7 @@ export default function SEO({
   title,
   description,
   path = '/',
+  canonical,
   image = DEFAULT_IMAGE,
   type = 'website',
   noIndex = false,
@@ -22,7 +23,11 @@ export default function SEO({
     'Learn trading fundamentals, risk management, trading psychology, technical analysis, and strategies with TradingBasics.'
 
   const normalizedPath = path.startsWith('/') ? path : `/${path}`
-  const canonicalUrl = `${SITE_URL}${normalizedPath}`
+  const canonicalUrl = canonical
+    ? canonical.startsWith('http')
+      ? canonical
+      : `${SITE_URL}${canonical.startsWith('/') ? canonical : `/${canonical}`}`
+    : `${SITE_URL}${normalizedPath}`
 
   return (
     <Helmet>

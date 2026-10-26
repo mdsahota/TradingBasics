@@ -1,4 +1,4 @@
-
+﻿
 import puppeteer from 'puppeteer'
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
@@ -21,6 +21,11 @@ const routes = [
   '/market-analysis/',
   '/risk-disclaimer/',
   '/blog/',
+  '/blog/trading-for-beginners/',
+  '/blog/why-risk-management-matters/',
+  '/blog/you-dont-need-to-be-right/',
+  '/blog/ladder-trading/',
+  '/blog/how-to-become-a-better-trader/',
   '/about/',
   '/contact/',
   '/affiliate-disclosure/',

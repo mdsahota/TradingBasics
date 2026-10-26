@@ -1,4 +1,4 @@
-
+﻿
 import SEO from '../components/seo/SEO'
 import Container from '../components/common/Container'
 import Button from '../components/common/Button'
@@ -17,7 +17,7 @@ export default function WhyRiskManagementMatters() {
   return (
     <>
       <SEO
-        title="Why Risk Management Matters in Trading | TradingBasics"
+        title="Why Risk Management Matters in Trading"
         description="Learn the basics of trading risk management, including position sizing, stop-loss planning, risk-to-reward ratios, drawdowns, and common mistakes."
         canonical="https://tradingbasics.ca/blog/why-risk-management-matters/"
       />
@@ -230,7 +230,7 @@ export default function WhyRiskManagementMatters() {
                     rel="sponsored nofollow noopener noreferrer"
                      style={{ fontWeight: 600 }}
                 >
-                    View the book on Amazon →
+                    View the book on Amazon &rarr;
                 </a>
                 </p>
                 <p>
