@@ -38,8 +38,26 @@ const browser = await puppeteer.launch({ headless: true })
 try {
   for (const route of routes) {
     // A fresh page prevents state from a previous route carrying over.
-    const page = await browser.newPage()
-    const url = `${baseUrl}${route}`
+  const page = await browser.newPage()
+
+  // Prevent AdSense and advertising scripts from running
+  // during SEO prerendering.
+  await page.setRequestInterception(true)
+
+  page.on('request', request => {
+    const requestUrl = request.url()
+
+    const isAdRequest =
+      /googlesyndication\.com|doubleclick\.net|googletagservices\.com|adtrafficquality\.google/i.test(requestUrl)
+
+    if (isAdRequest) {
+      request.abort()
+    } else {
+      request.continue()
+    }
+  })
+
+  const url = `${baseUrl}${route}`
 
     try {
       console.log(`Rendering ${route}`)
